@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { DieteticsComponent } from './dietetics/dietetics.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DieteticsComponent
+    DieteticsComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
