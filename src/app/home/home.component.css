@@ -1,0 +1,62 @@
+.carousel-item {
+    height: 400px;
+    
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+
+  a {
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.carousel {
+
+width: 500px;
+margin-left: 30%;
+margin-bottom: 5%;
+padding-top: 3%;
+}
+.lead {
+
+    font-style: oblique;
+font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    position: relative;
+    background: rgba(29, 28, 28, 0.801);
+    background: rgba(10, 10, 10, 0.247);
+    font-weight: 900;
+    text-shadow: 2px 2px 8px #0a0a0a
+    
+    
+}
+.bg-1{
+	padding: 0;
+	
+	display: inline-block;
+}
+.content{
+	display: inline-block;
+	padding: 1%;
+	margin:1%;
+    width: 23%;
+   
+
+	text-align: left;
+	font-family: 'Nunito', sans-serif;
+	background-color: #ffffff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+section#news{
+	height: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 2%;
+	background-color: #f0f5e7;
+}
