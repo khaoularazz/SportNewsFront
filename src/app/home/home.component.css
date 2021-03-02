@@ -1,13 +1,13 @@
 .carousel-item {
     height: 400px;
-    
+
     min-height: 300px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+
   }
 
   a {
@@ -32,12 +32,12 @@ padding-top: 3%;
     background: rgba(10, 10, 10, 0.247);
     font-weight: 900;
     text-shadow: 2px 2px 8px #0a0a0a
-    
-    
+
+
 }
 .bg-1{
 	padding: 0;
-	
+
 	display: inline-block;
 }
 .content{
@@ -45,7 +45,7 @@ padding-top: 3%;
 	padding: 1%;
 	margin:1%;
     width: 23%;
-   
+
 
 	text-align: left;
 	font-family: 'Nunito', sans-serif;
@@ -53,10 +53,37 @@ padding-top: 3%;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+
 section#news{
-	height: auto;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-bottom: 2%;
-	background-color: #f0f5e7;
+  padding-left:50px;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  background-color:  #F5F5F5;
+}
+.im{
+  transition:transform 2s;
+  margin-left:80px;
+}
+#news:hover .im{
+  transform: scale(1.2);
+}
+#news .imgBox{
+  position:relative;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 10px;
+  position: relative;
+  font-size: 30px;
+  font-weight: normal;
+  color: #000000;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
 }

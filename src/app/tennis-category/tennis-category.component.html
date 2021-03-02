@@ -1,7 +1,11 @@
+<br>
+<br><br><br><br>
 <section   id="news">
-    <h1 style="text-align: center;"  id="header"><b>Tennis</b></h1><hr> 
-                <a href={{news.url}} *ngFor="let news of alltennisnews; let i=index"style="display: inline-block;" class="content">
-                    <p style=" text-align:center;color:  black;"><b>{{news.title}}</b></p>
-                    <img  src="{{news.image}}"  class="img-responsive" style="display:inline ;margin-left: 8%; " alt="EPL" width=250 height="170">
-                  </a>               
+  <h1 id="header"><b>Tennis</b></h1><hr>
+
+  <a href={{news.url}} *ngFor="let news of alltennisnews; let i=index"style="text-decoration: none;height:300px;width:500px;display: inline-block;" class="content">
+    <p style="font-size: 14px; color: black;"  class="title"><b>{{news.title}}</b></p>
+    <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=300 height="150">
+  </a>
+
 </section>

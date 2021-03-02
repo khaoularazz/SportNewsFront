@@ -1,32 +1,48 @@
-<nav class="navbar navbar-expand-sm navbar-custom fixed-top">
-    <img class="im" style="width: 10%;" src="../assets/images/ps.jpg"/>
-    <a routerLink="" class="navbar-brand" style="margin-right: 40%;">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
-        <i class="fa fa-bars fa-lg py-1 text-white"></i>
-    </button>
-    <div class="navbar-collapse collapse" id="navbarCustom">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="#">Video</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/Dietetics">Dietetics</a>
-            </li>
-        
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/mentions-legal">Mentions Légales</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Autres
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" routerLink="/FootBall">FootBall</a>
-                    <a class="dropdown-item" routerLink="/Tennis">Tennis</a>
-                    <a class="dropdown-item" routerLink="/Golf">Golf</a>
-                    <a class="dropdown-item" routerLink="/Cyclisme">Cyclisme</a>
-                </div>
-            </li>
-        </ul>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="contact-box">
+    <div class="first"><img height="8px" width="8px" style="margin-right: 5px;"
+                            src="data:image/png;base64,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"> PRESS SPORTIVE</div>
+    <div class="third" class="float-right"><img height="8px" width="8px" style="margin-right: 5px;"
+                                                src="data:image/png;base64,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">TOUTE L'ACTUALITE SPORTIVE
     </div>
-  </nav>
+  </div>
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <img class="im" style="width: 10%;" src="../assets/images/ps.jpg"/><div>
+
+    </div></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="video">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="dietetics" routerLinkActive="active">Dietetics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="width:150px;" >Mentions Légales</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Autres
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/FootBall">FootBall</a>
+            <a class="dropdown-item" routerLink="/Tennis">Tennis</a>
+            <a class="dropdown-item" routerLink="/Golf">Golf</a>
+            <a class="dropdown-item" routerLink="/Cyclisme">Cyclisme</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

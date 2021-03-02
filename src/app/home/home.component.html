@@ -1,5 +1,5 @@
 
-  <header>
+  <header style="margin-top:100px;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -31,51 +31,41 @@
   </header>
 
   <!-- Page Content -->
-    <section   id="news">
-
-        <h1 id="header"><b>Football</b></h1><hr>
-
-
-      <a  routerLink="/FootBall"> <h1 id="header"><b>Football</b></h1><hr> </a> 
-      
-
-                    <a href={{news.url}} *ngFor="let news of footnews; let i=index"style="display: inline-block;" class="content">
-                        <p style="font-size: 10px;color: black;"><b>{{news.title}}</b></p>
-                        <img  src="{{news.image}}"  class="img-responsive" style="display:inline" alt="EPL" width=220 height="150">
-                        </a>
+  <section   id="news">
+    <h1 id="header"><b>Football</b></h1><hr>
+    <div class="imgBox" *ngFor="let news of footnews; let i=index" style="text-decoration: none;height:300px;width:500px;display: inline-block;" class="content">
+      <a href={{news.url}} >
+        <p style="font-size: 14px;color: black;" class="title"><b>{{news.title}}</b></p>
+        <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=300 height="150">
+      </a>
+    </div>
 
   </section>
   <section   id="news">
+    <h1 id="header"><b>Tennis</b></h1><hr>
 
+    <a href={{news.url}} *ngFor="let news of tennisnews; let i=index"style="text-decoration: none;height:300px;width:500px;display: inline-block;" class="content">
+      <p style="font-size: 14px; color: black;"  class="title"><b>{{news.title}}</b></p>
+      <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=300 height="150">
+    </a>
 
-  <a  routerLink="/Tennis"> <h1 id="header"><b>Tennis</b></h1><hr> </a> 
-  
+  </section>
+  <section   id="news">
+    <h1 id="header"><b>Golf</b></h1><hr>
 
-                <a href={{news.url}} *ngFor="let news of tennisnews; let i=index"style="display: inline-block;" class="content">
-                    <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
-                    <img  src="{{news.image}}"  class="img-responsive" style="display:inline" alt="EPL" width=220 height="150">
-                  </a>
+    <a href={{news.url}} *ngFor="let news of golfnews; let i=index"style="text-decoration: none;height:300px;width:500px;display: inline-block;" class="content">
+      <p style="font-size: 14px; color: black;" class="title"><b>{{news.title}}</b></p>
+      <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=300 height="150">
+    </a>
 
-</section>
-<section   id="news">
+  </section>
+  <section   id="news">
+    <h1 id="header"><b>Cyclisme</b></h1><hr>
 
- <a  routerLink="/Golf">   <h1 id="header"><b>Golf</b></h1><hr> </a>
-  
+    <a href={{news.url}} *ngFor="let news of cyclnews; let i=index"style=" height:300px;width:500px;display: inline-block;text-decoration: none;" class="content">
+      <p style="font-size: 14px; color: black;" class="title"><b>{{news.title}}</b></p>
+      <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=300 height="150">
+    </a>
 
-                <a href={{news.url}} *ngFor="let news of golfnews; let i=index"style="display: inline-block;" class="content">
-                    <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
-                    <img  src="{{news.image}}"  class="img-responsive" style="display:inline" alt="EPL" width=220 height="150">
-                  </a>
+  </section>
 
-</section>
-<section   id="news">
-
-   <a  routerLink="/Cyclisme"> <h1 id="header"><b>Cyclisme</b></h1><hr> </a>
-  
-
-                <a href={{news.url}} *ngFor="let news of cyclnews; let i=index"style="display: inline-block;" class="content">
-                    <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
-                    <img  src="{{news.image}}"  class="img-responsive" style="display:inline" alt="EPL" width=220 height="150">
-                  </a>
-
-</section>

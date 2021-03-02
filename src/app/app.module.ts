@@ -22,15 +22,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     HomeComponent,
     DieteticsComponent,
-
-    VideoComponent
-
+    VideoComponent,
     FootballCategoryComponent,
     CyclingCategoryComponent,
     GolfCategoryComponent,
     TennisCategoryComponent,
-    NavbarComponent,
-
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +37,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 
   ],
   providers: [
-    
+
   ],
   bootstrap: [AppComponent],
 })
