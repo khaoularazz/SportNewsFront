@@ -1,0 +1,8 @@
+
+<section   id="news">
+    <h1 style="text-align: center;"  id="header"><b>FootBall</b></h1><hr> 
+                <a href={{news.url}} *ngFor="let news of allfootnews; let i=index"style="display: inline-block;" class="content">
+                    <p style="text-align: center; ; color: black;"><b>{{news.title}}</b></p>
+                    <img  src="{{news.image}}"  class="img-responsive" style="display:inline;margin-left: 8%; " alt="EPL" width=250 height="170">
+                  </a>               
+</section>
