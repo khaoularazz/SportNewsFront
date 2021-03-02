@@ -14,7 +14,7 @@ import { GolfCategoryComponent } from './golf-category/golf-category.component';
 import { TennisCategoryComponent } from './tennis-category/tennis-category.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { MentionsLegalComponent } from './mentions-legal/mentions-legal.component';
 
 
 @NgModule({
@@ -27,7 +27,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CyclingCategoryComponent,
     GolfCategoryComponent,
     TennisCategoryComponent,
-    NavbarComponent
+    NavbarComponent,
+    MentionsLegalComponent
   ],
   imports: [
     BrowserModule,
