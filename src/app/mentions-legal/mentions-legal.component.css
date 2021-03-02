@@ -1,0 +1,26 @@
+body.img{
+    margin:0;
+    padding:0;
+    font-weight: Century Gothic;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    margin-right: 50px;
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    top: 50%;
+    background-color:rgb(0,0,0,.6);
+    color: white;
+    padding-right :100px; 
+    display: inline-block;
+    width: 48%;
+     padding: 1%;
+    float: right;
+  }

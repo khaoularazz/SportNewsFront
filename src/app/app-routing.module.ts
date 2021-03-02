@@ -1,3 +1,4 @@
+import { MentionsLegalComponent } from './mentions-legal/mentions-legal.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -9,13 +10,14 @@ import { CyclingCategoryComponent } from './cycling-category/cycling-category.co
 import { GolfCategoryComponent } from './golf-category/golf-category.component';
 import { TennisCategoryComponent } from './tennis-category/tennis-category.component';
 const routes: Routes = [
-  { path : '' , component : HomeComponent},
- { path : 'FootBall' , component : FootballCategoryComponent},
- { path : 'Tennis' , component : TennisCategoryComponent},
- { path : 'Golf' , component : GolfCategoryComponent},
- { path : 'Cyclisme' , component : CyclingCategoryComponent},
- { path : 'Dietetics' , component : DieteticsComponent},
-  { path: 'video', component: VideoComponent},
+  { path: '', component: HomeComponent },
+  { path: 'FootBall', component: FootballCategoryComponent },
+  { path: 'Tennis', component: TennisCategoryComponent },
+  { path: 'Golf', component: GolfCategoryComponent },
+  { path: 'Cyclisme', component: CyclingCategoryComponent },
+  { path: 'Dietetics', component: DieteticsComponent },
+  { path: 'video', component: VideoComponent },
+  { path: 'mentions-legal', component: MentionsLegalComponent }
 ];
 
 @NgModule({

@@ -14,6 +14,7 @@ import { GolfCategoryComponent } from './golf-category/golf-category.component';
 import { TennisCategoryComponent } from './tennis-category/tennis-category.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MentionsLegalComponent } from './mentions-legal/mentions-legal.component';
 
 
 
@@ -22,14 +23,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     HomeComponent,
     DieteticsComponent,
-
-    VideoComponent
-
+    VideoComponent,
     FootballCategoryComponent,
     CyclingCategoryComponent,
     GolfCategoryComponent,
     TennisCategoryComponent,
     NavbarComponent,
+    MentionsLegalComponent,
 
   ],
   imports: [
