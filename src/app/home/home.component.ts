@@ -19,7 +19,6 @@ type news = {
 })
 export class HomeComponent implements OnInit {
  sub:Subscription 
- centrville:any
   news :news[]=[]
   tennisnews :news[]=[]
   footnews :news[]=[]

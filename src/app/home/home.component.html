@@ -1,5 +1,4 @@
 
-
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -33,7 +32,12 @@
 
   <!-- Page Content -->
     <section   id="news">
+
         <h1 id="header"><b>Football</b></h1><hr>
+
+
+      <a  routerLink="/FootBall"> <h1 id="header"><b>Football</b></h1><hr> </a> 
+      
 
                     <a href={{news.url}} *ngFor="let news of footnews; let i=index"style="display: inline-block;" class="content">
                         <p style="font-size: 10px;color: black;"><b>{{news.title}}</b></p>
@@ -42,7 +46,10 @@
 
   </section>
   <section   id="news">
-    <h1 id="header"><b>Tennis</b></h1><hr>
+
+
+  <a  routerLink="/Tennis"> <h1 id="header"><b>Tennis</b></h1><hr> </a> 
+  
 
                 <a href={{news.url}} *ngFor="let news of tennisnews; let i=index"style="display: inline-block;" class="content">
                     <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
@@ -51,7 +58,9 @@
 
 </section>
 <section   id="news">
-    <h1 id="header"><b>Golf</b></h1><hr>
+
+ <a  routerLink="/Golf">   <h1 id="header"><b>Golf</b></h1><hr> </a>
+  
 
                 <a href={{news.url}} *ngFor="let news of golfnews; let i=index"style="display: inline-block;" class="content">
                     <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
@@ -60,7 +69,9 @@
 
 </section>
 <section   id="news">
-    <h1 id="header"><b>Cyclisme</b></h1><hr>
+
+   <a  routerLink="/Cyclisme"> <h1 id="header"><b>Cyclisme</b></h1><hr> </a>
+  
 
                 <a href={{news.url}} *ngFor="let news of cyclnews; let i=index"style="display: inline-block;" class="content">
                     <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
