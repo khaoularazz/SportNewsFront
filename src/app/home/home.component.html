@@ -10,8 +10,8 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
- 
-       
+
+
 
         <a  *ngFor="let news of news; let i=index" href="{{news.url}}" data-interval = "2000" [ngClass]="(i==0)?'carousel-item active':'carousel-item'"  [ngStyle]="{'background-image':'url('+news.image+')'}">
            <div class="carousel-caption d-none d-md-block">
@@ -29,42 +29,53 @@
           </a>
     </div>
   </header>
-  
+
   <!-- Page Content -->
     <section   id="news">
+
+        <h1 id="header"><b>Football</b></h1><hr>
+
+
       <a  routerLink="/FootBall"> <h1 id="header"><b>Football</b></h1><hr> </a> 
       
+
                     <a href={{news.url}} *ngFor="let news of footnews; let i=index"style="display: inline-block;" class="content">
                         <p style="font-size: 10px;color: black;"><b>{{news.title}}</b></p>
                         <img  src="{{news.image}}"  class="img-responsive" style="display:inline" alt="EPL" width=220 height="150">
-                        </a>               
-  
+                        </a>
+
   </section>
   <section   id="news">
+
+
   <a  routerLink="/Tennis"> <h1 id="header"><b>Tennis</b></h1><hr> </a> 
   
+
                 <a href={{news.url}} *ngFor="let news of tennisnews; let i=index"style="display: inline-block;" class="content">
                     <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
                     <img  src="{{news.image}}"  class="img-responsive" style="display:inline" alt="EPL" width=220 height="150">
-                  </a>               
+                  </a>
 
 </section>
 <section   id="news">
+
  <a  routerLink="/Golf">   <h1 id="header"><b>Golf</b></h1><hr> </a>
   
+
                 <a href={{news.url}} *ngFor="let news of golfnews; let i=index"style="display: inline-block;" class="content">
                     <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
                     <img  src="{{news.image}}"  class="img-responsive" style="display:inline" alt="EPL" width=220 height="150">
-                  </a>               
+                  </a>
 
 </section>
 <section   id="news">
+
    <a  routerLink="/Cyclisme"> <h1 id="header"><b>Cyclisme</b></h1><hr> </a>
   
+
                 <a href={{news.url}} *ngFor="let news of cyclnews; let i=index"style="display: inline-block;" class="content">
                     <p style="font-size: 10px; color: black;"><b>{{news.title}}</b></p>
                     <img  src="{{news.image}}"  class="img-responsive" style="display:inline" alt="EPL" width=220 height="150">
-                  </a>               
+                  </a>
 
 </section>
-  

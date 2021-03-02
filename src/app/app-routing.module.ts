@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+
 import { DieteticsComponent } from './dietetics/dietetics.component';
+import { HomeComponent } from './home/home.component';
+import { VideoComponent } from './video/video.component';
 import { FootballCategoryComponent } from './football-category/football-category.component';
 import { CyclingCategoryComponent } from './cycling-category/cycling-category.component';
 import { GolfCategoryComponent } from './golf-category/golf-category.component';
@@ -13,6 +15,7 @@ const routes: Routes = [
  { path : 'Golf' , component : GolfCategoryComponent},
  { path : 'Cyclisme' , component : CyclingCategoryComponent},
  { path : 'Dietetics' , component : DieteticsComponent},
+  { path: 'video', component: VideoComponent},
 ];
 
 @NgModule({

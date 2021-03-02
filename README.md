@@ -1,6 +1,14 @@
-# SportNews
+# PSportive
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+PSportive est un projet de module de gestion de projet LSI 2 de la FST TANGER développé par :
+* AICHE Hanae
+* AKHATIOU Safae 
+* BARAKATE Ali
+* BEN MOUSSA SOUMAYA
+* CHARIT Meryem
+* MOUNADI Fatima Zahrae
+* RAZZAKI KHAOULA
+
 
 ## Development server
 
