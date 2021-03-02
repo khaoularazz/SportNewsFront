@@ -2,10 +2,10 @@
 <br><br><br><br>
 <section   id="news">
   <h1 id="header"><b>Football</b></h1><hr>
-  <div class="imgBox" *ngFor="let news of allfootnews; let i=index" style="text-decoration: none;height:300px;width:500px;display: inline-block;" class="content">
+  <div class="imgBox" *ngFor="let news of allfootnews; let i=index" style="text-decoration: none;height:300px;width:250px;display: inline-block;" class="content">
     <a href={{news.url}} >
       <p style="font-size: 14px;color: black;" class="title"><b>{{news.title}}</b></p>
-      <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=300 height="150">
+      <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=150 height="100">
     </a>
   </div>
 

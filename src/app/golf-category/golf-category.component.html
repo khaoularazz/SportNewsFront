@@ -3,9 +3,9 @@
 <section   id="news">
   <h1 id="header"><b>Golf</b></h1><hr>
 
-  <a href={{news.url}} *ngFor="let news of allgolfnews; let i=index"style="text-decoration: none;height:300px;width:500px;display: inline-block;" class="content">
+  <a href={{news.url}} *ngFor="let news of allgolfnews; let i=index"style="text-decoration: none;height:300px;width:250px;display: inline-block;" class="content">
     <p style="font-size: 14px; color: black;" class="title"><b>{{news.title}}</b></p>
-    <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=300 height="150">
+    <img  src="{{news.image}}"  class="img-responsive im" style="display:inline" alt="EPL" width=150 height="100">
   </a>
 
 </section>
